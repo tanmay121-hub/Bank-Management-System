@@ -8,6 +8,19 @@ public class User {
     private String mobileNumber;
     private String email;
     private String address;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId='" + userId + '\'' +
+                ", name='" + name + '\'' +
+                ", mobileNumber='" + mobileNumber + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", id=" + id +
+                '}';
+    }
+
     IDGenerator id  = new IDGenerator();
 
     public User(String name, String mobileNumber, String email, String address) {
@@ -55,14 +68,4 @@ public class User {
         this.address = address;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "userId='" + userId + '\'' +
-                ", name='" + name + '\'' +
-                ", mobileNumber='" + mobileNumber + '\'' +
-                ", email='" + email + '\'' +
-                ", address='" + address + '\'' +
-                '}';
-    }
 }

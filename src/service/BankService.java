@@ -1,4 +1,9 @@
 package service;
 
-public class BankService {
+public interface BankService {
+    void createAccount();
+    void depositMoney();
+    void  withdrawMoney();
+    void showAccountDetails();
+    void showAllAccounts();
 }

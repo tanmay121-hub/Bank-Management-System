@@ -38,8 +38,11 @@ public class Account {
     public String withdraw(double amount){
         if(amount>balance) return "Insufficient Balance";
         balance = balance-amount;
-        return  "Succesfully withdraw";
+        return  "Successfully withdraw";
     }
 
 
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
 }

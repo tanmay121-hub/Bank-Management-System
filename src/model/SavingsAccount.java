@@ -10,4 +10,14 @@ public class SavingsAccount extends Account{
     public double getMinBalance(){
         return MIN_BALANCE;
     }
+
+    @Override
+    public String toString() {
+        return "SavingsAccount{" +
+                ", accountType=" + accountType +
+                ", balance=" + balance +
+                ", user=" + user +
+                ", accountNumber='" + accountNumber + '\'' +
+                '}';
+    }
 }
