@@ -1,4 +1,6 @@
 package constant;
 
-public class AccountType {
+public enum AccountType {
+    CURRENT,
+    SAVING
 }
